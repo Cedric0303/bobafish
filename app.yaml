@@ -1,14 +1,14 @@
 runtime: nodejs16 # or another supported version
 
 env_variables:
-  MONGO_URL: "mongodb+srv://comp30022:comp30022@ctrl-alt-elite.ys2d9.mongodb.net/it-project?retryWrites=true&w=majority"
-  SECRET_KEY: "boba milk tea"
-  SALT: 10
-  REACT_APP_BACKEND_API_URL: "https://bobafish-crm-374212.ts.r.appspot.com/"
-  REACT_APP_FRONTEND_URL: "https://bobafish-crm.vercel.app/"
+    MONGO_URL: "mongodb+srv://comp30022:comp30022@ctrl-alt-elite.ys2d9.mongodb.net/it-project?retryWrites=true&w=majority"
+    SECRET_KEY: "boba milk tea"
+    SALT: 10
+    REACT_APP_BACKEND_API_URL: "https://bobafish-crm-374212.ts.r.appspot.com"
+    REACT_APP_FRONTEND_URL: "https://bobafish-crm.vercel.app"
 
 handlers:
-  - url: /.*
-    secure: always
-    redirect_http_response_code: 301
-    script: auto
+    - url: /.*
+      secure: always
+      redirect_http_response_code: 301
+      script: auto

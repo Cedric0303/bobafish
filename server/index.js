@@ -20,7 +20,7 @@ const app = express();
 app.use(
     cors({
         credentials: true,
-        origin: process.env.REACT_APP_FRONTEND_URL,
+        origin: "*",
     })
 );
 app.use(express.static(path.resolve(__dirname, "../client/build")));
